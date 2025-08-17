@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Cart</title>
+    <link rel="stylesheet" href="E-Cart.css" type="text/css">
+    <script src="E-Cart.js"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div id="logo">E-Cart</div>
+        <div id="nav-links">
+            <a href="#laptops">Laptops</a>
+            <a href="#mobiles">Mobiles</a>
+            <a href="#watches">Smart Watches</a>
+            <a href="#tablets">Tablets</a>
+            <button onclick="toggleCart()">Cart</button>
+        </div>
+    </div>
+
+    <div class="name" id="laptops">Laptops</div>
+    <div class="laptop-container">
+        <div class="laptop">
+            <img src="https://m.media-amazon.com/images/I/715P4YWFq7L._SL1500_.jpg">
+            Asus Vivobook ₹40,000
+            <p>Intel Core i3, 15.6" FHD, 8GB RAM/512GB SSD</p>
+            <button onclick="addToCart('Asus Vivobook',40000)">Add to Cart</button>
+        </div>
+        <div class="laptop">
+            <img src="https://m.media-amazon.com/images/I/815EBJT+CoL._SL1500_.jpg">
+            Dell 15 ₹50,000
+            <p>Intel Core i3, 16GB RAM/512GB SSD</p>
+            <button onclick="addToCart('Dell 15',50000)">Add to Cart</button>
+        </div>
+        <div class="laptop">
+            <img src="https://m.media-amazon.com/images/I/41x+PdMIXgL._SY300_SX300_.jpg">
+            Lenovo LOQ ₹54,000
+            <p>Intel Core i5, NVIDIA RTX 2050, 12GB RAM/512GB SSD</p>
+            <button onclick="addToCart('Lenovo LOQ',54000)">Add to Cart</button>
+        </div>
+        <div class="laptop">
+            <img src="https://m.media-amazon.com/images/I/71bagLp2sXL._SX679_.jpg">
+            Acer Aspire Lite ₹43,000
+            <p>AMD Ryzen 3, 16GB RAM/512GB SSD, 15.6" FHD</p>
+            <button onclick="addToCart('Acer Aspire Lite',43000)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="name" id="mobiles">Mobiles</div>
+    <div class="mobile-container">
+        <div class="mobile">
+            <img src="https://m.media-amazon.com/images/I/71Sa3dqTqzL._SL1500_.jpg">
+            Samsung Galaxy S23 ₹1,00,000
+            <p>Snapdragon 8 Gen2, 8GB RAM, 256GB Storage</p>
+            <button onclick="addToCart('Samsung Galaxy S23',100000)">Add to Cart</button>
+        </div>
+        <div class="mobile">
+            <img src="https://s3.ap-south-1.amazonaws.com/shop.unicorn/full/d51893ece10e9426f1f0f4038.webp">
+            iPhone 15 ₹66,000
+            <p>Apple A16 Bionic, 6GB RAM, 128GB Storage</p>
+            <button onclick="addToCart('iPhone 15',66000)">Add to Cart</button>
+        </div>
+        <div class="mobile">
+            <img src="https://m.media-amazon.com/images/I/716uVx3Wr5L._SL1500_.jpg">
+            OnePlus 12R ₹32,000
+            <p>Snapdragon 8s Gen3, 12GB RAM, 256GB Storage</p>
+            <button onclick="addToCart('OnePlus 12R',32000)">Add to Cart</button>
+        </div>
+        <div class="mobile">
+            <img src="https://m.media-amazon.com/images/I/71r41+TT2UL._SL1500_.jpg">
+            Xiaomi Redmi Note 13 Pro+ ₹18,020
+            <p>Dimensity 7200-Ultra, 12GB RAM, 512GB Storage</p>
+            <button onclick="addToCart('Xiaomi Redmi Note 13 Pro+',18020)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="name" id="watches">Smart Watches</div>
+    <div class="watch-container">
+        <div class="watch">
+            <img src="https://m.media-amazon.com/images/I/71wjphD-VFL._AC_UL320_.jpg">
+            Apple Watch Series 9 ₹24,000
+            <p>Always-On Retina Display</p>
+            <button onclick="addToCart('Apple Watch Series 9',24000)">Add to Cart</button>
+        </div>
+        <div class="watch">
+            <img src="https://m.media-amazon.com/images/I/41Q+MNft5ML._SY300_SX300_.jpg">
+            Samsung Galaxy Watch 6 ₹21,700
+            <p>Super AMOLED Display, Exynos W930</p>
+            <button onclick="addToCart('Samsung Galaxy Watch 6',21700)">Add to Cart</button>
+        </div>
+        <div class="watch">
+            <img src="https://m.media-amazon.com/images/I/61bBHUOgqsL._AC_UL320_.jpg">
+            Amazfit GTR 4 ₹1,200
+            <p>1.43” AMOLED, Dual-Band GPS</p>
+            <button onclick="addToCart('Amazfit GTR 4',1200)">Add to Cart</button>
+        </div>
+        <div class="watch">
+            <img src="https://m.media-amazon.com/images/I/61IYppaanVL._AC_UY218_.jpg">
+            Noise ColorFit Pro 5 ₹2,900
+            <p>1.85” AMOLED, BT Calling</p>
+            <button onclick="addToCart('Noise ColorFit Pro 5',2900)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="name" id="tablets">Tablets</div>
+    <div class="tablet-container">
+        <div class="tablet">
+            <img src="https://m.media-amazon.com/images/I/61G6WfvA9vL._AC_UY218_.jpg">
+            iPad Pro ₹1,20,000
+            <p>12.9", M2, Pencil</p>
+            <button onclick="addToCart('iPad Pro',120000)">Add to Cart</button>
+        </div>
+        <div class="tablet">
+            <img src="https://m.media-amazon.com/images/I/71LkjBzYjKL._AC_UY218_.jpg">
+            Galaxy Tab S8 ₹85,000
+            <p>11", Snapdragon 8 Gen1</p>
+            <button onclick="addToCart('Galaxy Tab S8',85000)">Add to Cart</button>
+        </div>
+        <div class="tablet">
+            <img src="https://m.media-amazon.com/images/I/51rp8yGYGCL._AC_UY218_.jpg">
+            Lenovo Tab P11 ₹25,000
+            <p>11", Snapdragon 662</p>
+            <button onclick="addToCart('Lenovo Tab P11',25000)">Add to Cart</button>
+        </div>
+        <div class="tablet">
+            <img src="https://m.media-amazon.com/images/I/61tslaYWLjL._AC_UY218_.jpg">
+            Realme Pad X ₹20,000
+            <p>10.95", Snapdragon 695</p>
+            <button onclick="addToCart('Realme Pad X',20000)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div id="cart-popup">
+        <div id="cart-items"></div>
+        <div>Total: ₹<span id="cart-total">0</span></div>
+        <button onclick="buyNow()">Buy</button>
+    </div>
+
+    <div class="footer">
+        
+<footer style="background-color: #466ec4; text-align:center; font-weight:bold; font-size:20px;">
+    © 2025 E-Cart. All rights reserved.
+</footer>
+
+</div>
+</body>
+</html>
